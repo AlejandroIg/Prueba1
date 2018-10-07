@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Perris</title>
+    <link rel="icon" href="img/dog-icono.png">
+    <!--Referencias-->
+    <link rel="stylesheet" href="style/estil.css">
+    <link rel="stylesheet" href="style/registro.css">
+    <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-dog">Mis Perris</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="">Registro</a>
+                <a href="">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="form__top">
+                <h2>Formulario <span>Registro</span></h2>
+            </div>		
+            <form class="form__reg">
+                <input class="input" type="text" onkeyup="modifyText()" placeholder="&#128100; Rut Cliente" required autofocus>
+                <input id="txtNombre" class="input" type="text" maxlength="15" minlength="15" placeholder="&#128100;  Nombre" required>
+                <label for="fecha">Fecha Nacimiento</label>
+                <input id="fecha" class="input" type="date" min="1980-01-01" max="2001-01-01" required> <!--revisar bien-->
+                <input class="input" type="email" placeholder="&#9993;  Email" required>
+                <input class="input" type="text" size="9" onchange="validarSiNumero(thisvalue);" placeholder="&#128222;  Telefono" required>
+                <label for="txtRegion">Region</label>
+                <select class="input" id="txtRegion" oninput="selectCity()"></select>
+                <label for="txtCity">Ciudad</label>
+                <select class="input" id="txtCity"></select>
+                <label for="Option">Vivienda</label>
+                <select class="input" id="Option">
+                    <option>Casa con patio grande</option>
+                    <option>Casa Con patio pequeña</option>
+                    <option>Casa sin patio</option>
+                    <option>Departamento</option>
+                </select>
+
+                <div class="btn__form">
+                    <input class="btn__submit" type="submit" value="REGISTRAR">
+                    <input class="btn__reset" type="reset" value="LIMPIAR">	
+                </div>
+            </form> 
+    </div>
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-twitter"></a>
+            <a href="" class="icon-gplus"></a>
+        </div>
+        <p class="copy">&copy; Mis perris 2018 - Todos los derechos reservados. </p>
+    </footer>
+    <script src="js/validacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mis Perris</title>
+    <link rel="icon" href="img/dog-icono.png">
+    <link rel="stylesheet" href="style/estil.css">
+    <link rel="stylesheet" href="style/registro.css">
+    <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-dog">Mis Perris</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="formulario.html">Registro</a>
+                <a href="">Contacto</a>
+            </nav>
+         </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form__top">
+                <h2>Formulario <span>Rescatado</span></h2>
+            </div>
+            <form class="form__reg">
+                <input class="input" type="file" id="file" onchange="return fileValidation()" required>
+                <input id="txtNombre" class="input" type="text" maxlength="10" minlength="7" placeholder="&#128100;  Nombre" required>
+                <input type="text" class="input" maxlength="10" minlength="30" placeholder="Descripcion" required>
+                <label for="Option">Estado</label>
+                <select class="input" id="Option">
+                    <option>Rescatado</option>
+                    <option>Disponible</option>
+                    <option>Adoptado</option>
+                </select>
+
+                <div class="btn__form">
+                    <input class="btn__submit" type="submit" value="REGISTRAR">
+                    <input class="btn__reset" type="reset" value="LIMPIAR">	
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/validacion.js"></script>
+</body>
+</html>
