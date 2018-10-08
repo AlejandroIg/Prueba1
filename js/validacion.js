@@ -134,4 +134,3 @@ function selectCity() {
         txtCity.appendChild(option)
     }
 }
-

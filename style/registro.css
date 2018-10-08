@@ -80,6 +80,14 @@ h2 span {
 .btn__reset:hover{
 	background-color: #FA9535;
 }
+/*----MAIN----*/
+.prueba{
+	margin-top: 65px;
+}
+
+main{
+	margin-top: 65px;
+}
 
 /*------Footer----*/
 footer{
@@ -87,6 +95,7 @@ footer{
 	background: #333;
 	padding: 10px;
 	color: white;
+	margin-top: 60px; /*550PX */
 }
 
 .icon-facebook{
@@ -130,3 +139,20 @@ footer{
     height: 50px;
     line-height: 40px;
 }
+
+
+/*----------MAIN---------*/
+@media (min-width: 1024px){
+	footer{
+		margin-top: 552px; /*550PX */
+	}
+
+	main{
+		margin-bottom: -480px;
+		margin-top: 81px;
+	}
+
+	.prueba{
+		margin-bottom: -320px
+	}   
+} 

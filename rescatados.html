@@ -8,6 +8,7 @@
     <link rel="icon" href="img/dog-icono.png">
     <link rel="stylesheet" href="style/estil.css">
     <link rel="stylesheet" href="style/registro.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link href="https://file.myfontastic.com/K2Hqyt9UZyx6J7D9gx4cYM/icons.css" rel="stylesheet">
 </head>
 <body>
@@ -24,15 +25,29 @@
          </div>
     </header>
 
-    <main>
+    <main class="prueba">
         <div class="container">
             <div class="form__top">
                 <h2>Formulario <span>Rescatado</span></h2>
             </div>
             <form class="form__reg">
+                <label for="file">Fotografia</label>
                 <input class="input" type="file" id="file" onchange="return fileValidation()" required>
-                <input id="txtNombre" class="input" type="text" maxlength="10" minlength="7" placeholder="&#128100;  Nombre" required>
-                <input type="text" class="input" maxlength="10" minlength="30" placeholder="Descripcion" required>
+                <input id="txtNombre" class="input" type="text" maxlength="10" minlength="7" placeholder="&#128054;  Nombre" required>
+                <label for="Raza">Raza Predominante</label>
+                <select class="input" id="Raza">
+                    <option>Border Collie</option>
+                    <option>Caniche</option>
+                    <option>Pastor alemán</option>
+                    <option>Golden retriever</option>
+                    <option>Doberman</option>
+                    <option>Pastor de las Shetland</option>
+                    <option>Labrador retriever</option>
+                    <option>Papillon</option>
+                    <option>Rottweiler</option>
+                    <option>Pastor australiano</option>
+                </select>
+                <input type="text" class="input" maxlength="10" minlength="30" placeholder="&#128229;   Descripcion" required>
                 <label for="Option">Estado</label>
                 <select class="input" id="Option">
                     <option>Rescatado</option>
@@ -47,6 +62,16 @@
             </form>
         </div>
     </main>
+
+    <footer>
+        <div class="social">
+            <a href="" class="icon-facebook"></a>
+            <a href="" class="icon-twitter"></a>
+            <a href="" class="icon-gplus"></a>
+        </div>
+        <p class="copy">&copy; Mis perris 2018 - Todos los derechos reservados. </p>
+    </footer>
+
     <script src="js/validacion.js"></script>
 </body>
 </html>
