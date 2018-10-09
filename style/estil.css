@@ -122,6 +122,11 @@ header label{  /*icono rig*/
 
 }
 
+.info__img{
+    margin: auto;
+    display: block;
+}
+
 /*-----Estilo de cursos-----*/
 
  .section__titulo{
@@ -142,7 +147,7 @@ header label{  /*icono rig*/
     color: white;
     background: rgb(0, 0, 0,0.5);
     width: 60%;
-    height: 98%; /*el fondo de atras del curso */
+    height: 99%; /*el fondo de atras del curso */
     padding: 5px;
 }
 
@@ -151,7 +156,7 @@ header label{  /*icono rig*/
     margin: 5px 0;
 }
 
-.cursos_img{
+.cursos__img{
     width: 100%;  
 }
 
