@@ -66,10 +66,13 @@ header label{  /*icono rig*/
     text-decoration: none;
     padding: 15px;
     border-bottom: 1px solid rgb(255, 255, 255,0.5);
+    
 }
 
 .menu a:hover{
     background: rgb(255, 255, 255,0.3);
+    border-bottom: 4px solid white;
+    transition: all 0.3s;
 }
 
 #menu-bar:checked ~ .menu{
@@ -168,6 +171,11 @@ header label{  /*icono rig*/
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+.footer a:hover {
+    color: black;
+    transition: all 0.3s;
 }
 
 .footer .social [class^="icon-"]{

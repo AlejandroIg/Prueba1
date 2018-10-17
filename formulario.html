@@ -14,9 +14,9 @@
 <body>
     <header>
         <div class="contenedor">
-            <h1 class="icon-dog">Mis Perris</h1>
+            <h1 tabindex="25" class="icon-dog">Mis Perris</h1>
             <input type="checkbox" id="menu-bar">
-            <label class="icon-menu" for="menu-bar"></label>
+            <label tabindex="24" class="icon-menu" for="menu-bar"></label>
             <nav class="menu">
                 <a href="index.html">Inicio</a>
                 <a href="">Registro</a>
@@ -27,31 +27,31 @@
     
     <main>
         <div class="container">
-            <div class="form__top">
+            <div tabindex="1" class="form__top">
                 <h2>Formulario <span>Registro</span></h2>
             </div>		
             <form class="form__reg">
-                <input class="input" type="text" onkeyup="modifyText()" placeholder="&#128100; Rut Cliente" required autofocus>
-                <input id="txtNombre" class="input" type="text" maxlength="15" minlength="15" placeholder="&#128100;  Nombre" required>
-                <label for="fecha">Fecha Nacimiento</label>
-                <input id="fecha" class="input" type="date" min="1980-01-01" max="2001-01-01" required> <!--revisar bien-->
-                <input class="input" type="email" placeholder="&#9993;  Email" required>
-                <input class="input" type="text" size="9" onchange="validarSiNumero(thisvalue);" placeholder="&#128222;  Telefono" required>
-                <label for="txtRegion">Region</label>
-                <select class="input" id="txtRegion" oninput="selectCity()"></select>
-                <label for="txtCity">Ciudad</label>
-                <select class="input" id="txtCity"></select>
-                <label for="Option">Vivienda</label>
-                <select class="input" id="Option">
-                    <option>Casa con patio grande</option>
-                    <option>Casa Con patio pequeña</option>
-                    <option>Casa sin patio</option>
-                    <option>Departamento</option>
+                <input tabindex="2" class="input" type="text" onkeyup="modifyText()" placeholder="&#128100; Rut Cliente" required autofocus>
+                <input tabindex="3" id="txtNombre" class="input" type="text" maxlength="15" minlength="15" placeholder="&#128100;  Nombre" required>
+                <label tabindex="4" for="fecha">Fecha Nacimiento</label>
+                <input tabindex="5" id="fecha" class="input" type="date" min="1980-01-01" max="2001-01-01" required> <!--revisar bien-->
+                <input tabindex="6" class="input" type="email" placeholder="&#9993;  Email" required>
+                <input tabindex="7" class="input" type="text" size="9" onchange="validarSiNumero(thisvalue);" placeholder="&#128222;  Telefono" required>
+                <label tabindex="8" for="txtRegion">Region</label>
+                <select tabindex="9" class="input" id="txtRegion" oninput="selectCity()"></select>
+                <label tabindex="10" for="txtCity">Ciudad</label>
+                <select tabindex="11" class="input" id="txtCity"></select>
+                <label tabindex="12" for="Option">Vivienda</label>
+                <select tabindex="13" class="input" id="Option">
+                    <option tabindex="14">Casa con patio grande</option>
+                    <option tabindex="15">Casa Con patio pequeña</option>
+                    <option tabindex="16">Casa sin patio</option>
+                    <option tabindex="17">Departamento</option>
                 </select>
 
                 <div class="btn__form">
-                    <input class="btn__submit" type="submit" value="REGISTRAR">
-                    <input class="btn__reset" type="reset" value="LIMPIAR">	
+                    <input tabindex="18" class="btn__submit" type="submit" value="REGISTRAR">
+                    <input tabindex="19" class="btn__reset" type="reset" value="LIMPIAR">	
                 </div>
             </form> 
     </div>
@@ -60,11 +60,11 @@
 
     <footer>
         <div class="social">
-            <a href="" class="icon-facebook"></a>
-            <a href="" class="icon-twitter"></a>
-            <a href="" class="icon-gplus"></a>
+            <a tabindex="20" href="" class="icon-facebook"></a>
+            <a tabindex="21" href="" class="icon-twitter"></a>
+            <a tabindex="22" href="" class="icon-gplus"></a>
         </div>
-        <p class="copy">&copy; Mis perris 2018 - Todos los derechos reservados. </p>
+        <p tabindex="23" class="copy">&copy; Mis perris 2018 - Todos los derechos reservados. </p>
     </footer>
     <script src="js/validacion.js"></script>
 </body>
