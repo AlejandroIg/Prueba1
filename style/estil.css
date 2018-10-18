@@ -66,13 +66,11 @@ header label{  /*icono rig*/
     text-decoration: none;
     padding: 15px;
     border-bottom: 1px solid rgb(255, 255, 255,0.5);
-    
 }
 
 .menu a:hover{
     background: rgb(255, 255, 255,0.3);
     border-bottom: 4px solid white;
-    transition: all 0.3s;
 }
 
 #menu-bar:checked ~ .menu{
@@ -173,11 +171,6 @@ header label{  /*icono rig*/
     text-align: center;
 }
 
-.footer a:hover {
-    color: black;
-    transition: all 0.3s;
-}
-
 .footer .social [class^="icon-"]{
     display: inline-block;
     color:#333;
@@ -190,6 +183,13 @@ header label{  /*icono rig*/
     height: 50px;
     line-height: 40px;
 }
+
+.footer a:hover
+{
+    transition: all 0.3s;
+    color: rgba(rgb(255, 0, 0), 0, 0, 0.5)
+}
+
 /*------Responsive----- */
 
 @media screen and (min-width:480px){

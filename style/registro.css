@@ -75,12 +75,10 @@ h2 span {
 
 .btn__submit:hover {
 	background-color: #4C9ED9;
-    transition: all 0.3s;
 }
 
 .btn__reset:hover{
 	background-color: #FA9535;
-	transition: all 0.3s;
 }
 /*----MAIN----*/
 .prueba{
@@ -99,12 +97,6 @@ footer{
 	color: white;
 	margin-top: 60px; /*550PX */
 }
-
-.social a:hover {
-	color: rgba(255, 0, 0, 0.4);
-    transition: all 1s;
-}
-
 
 .icon-facebook{
 	margin-bottom: 12px;
